@@ -1,6 +1,5 @@
 applications:
-- disk_quota: 1024M
-  host: bluegreenveer
+- host: bluegreenveer
   name: bluegreenveer
   path: .
   domain: mybluemix.net

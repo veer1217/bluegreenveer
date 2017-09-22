@@ -11,5 +11,8 @@
 		"body-parser": "x.x.0",
 		"request": "x.x.0"
 	},
-	"repository": {}
+	"repository": {
+		"type": "git",
+    	"url": "https://github.com/veer1217/bluegreenveer.git"
+	}
 }
