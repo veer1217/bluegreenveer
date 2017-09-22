@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 
 // cfenv provides access to your Cloud Foundry environment
 // for more info, see: https://www.npmjs.com/package/cfenv
-//var cfenv = require('cfenv');
+var cfenv = require('cfenv');
 
 // create a new express server
 var app = express();
@@ -25,13 +25,13 @@ app.use(bodyParser.urlencoded({
 
 var bmwrapper = require('./public/modules/bmwrapper.js');
 // get the app environment from Cloud Foundry
-//var appEnv = cfenv.getAppEnv();
+var appEnv = cfenv.getAppEnv();
 
-//var hostname = appEnv.bind;
-//var hostport = appEnv.port;
+var hostname = appEnv.bind;
+var hostport = appEnv.port;
 
-var hostname = 'localhost';
-var hostport = 3000;
+//var hostname = 'localhost';
+//var hostport = 3000;
 
 app.get('/', function(req, res){
 	res.redirect('./public/index.html');
