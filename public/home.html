@@ -1,0 +1,20 @@
+<div class='container'>
+	<h3>Sample Health Dashboard</h3>
+
+	<button type="submit" class="btn btn-default" ng-click='btngetorgs()'>Show Orgs</button>
+  <button type="submit" class="btn btn-default" ng-click='btngetspaces()'>Show Spaces</button>
+  <button type="submit" class="btn btn-default" ng-click='btngetapps()'>Show Apps</button>
+
+	<button type="submit" class="btn btn-default" ng-click='logout()'>Logout</button>
+   	<br/>
+	<div>
+      	<ul>
+           	<li ng-repeat="resource in resources">
+               	{{ resource }}
+           	</li>
+       	</ul>
+   	</div>
+</div>
+
+
+
